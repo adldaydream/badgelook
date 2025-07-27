@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Badge Lookup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Badge Lookup</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name...">
+  <button onclick="searchBadges()">Search</button>
+
+  <div id="results"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="badgeName"></h2>
+      <img id="badgeImage" src="" alt="Badge image">
+      <p id="badgeDesc"></p>
+      <p id="badgeDate"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

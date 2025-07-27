@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Welcome to Daydream!",
+    "description": "You completed the sign up form.",
+    "image": "badges/2.png",
+    "people": [
+      { "name": "Benjamin Graetz", "date": "2025-07-26" },
+      { "name": "Harrison Graetz", "date": "2025-07-26" },
+      { "name": "Oli Mebberson", "date": "2025-07-26" },
+      { "name": "Hayden Kong", "date": "2025-07-26" }
+    ]
+  },
+  {
+    "name": "Welcome to GitHub",
+    "description": "Attended the Welcome to GitHub workshop! You now know how to use GitHub very well!",
+    "image": "badges/1.png",
+    "people": [
+      { "name": "Benjamin Graetz", "date": "2025-07-26" }
+    ]
+  }
+]
