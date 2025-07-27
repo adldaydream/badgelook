@@ -9,15 +9,6 @@ function searchBadges() {
   const results = document.getElementById("results");
   results.innerHTML = "";
 
-  if (!name) {
-    results.innerHTML = `
-      <p>
-        Enter your name as it appears on your Attendee card.<br>
-        Need help? <a href="mailto:adelaide.daydream@gmail.com">Contact us</a>.
-      </p>`;
-    return;
-  }
-
   let found = false;
 
   badges.forEach(badge => {
@@ -37,4 +28,14 @@ function searchBadges() {
   }
 }
 
+function showModal(badge, date) {
+  document.getElementById("badgeName").textContent = badge.name;
+  document.getElementById("badgeImage").src = badge.image;
+  document.getElementById("badgeDesc").textContent = badge.description;
+  document.getElementById("badgeDate").textContent = "Unlocked on: " + date;
+  document.getElementById("modal").style.display = "block";
+}
 
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
